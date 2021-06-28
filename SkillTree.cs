@@ -12,13 +12,14 @@ namespace AoETreeEditor
         private string[,] Tree;
         public int Rows { get; }
         public int Columns { get; }
+        private Point Center { get; set; }
 
         public SkillTree(int rows = 200, int columns = 200, bool emptyCenter = false)
         {
             Tree = new string[rows, columns];
             Rows = rows;
             Columns = columns;
-            if (!emptyCenter) SetCenter();
+            if (!emptyCenter) SetCenterText();
         }
 
         public string Set(int x, int y, string value)
@@ -39,7 +40,7 @@ namespace AoETreeEditor
         {
             try
             {
-                return Tree[x, y];
+                return Tree[y, x];
             }
             catch (Exception e)
             {
@@ -65,9 +66,31 @@ namespace AoETreeEditor
             return output;
         }
 
-        private void SetCenter()
+        private void SetCenterText()
         {
-            Tree[Rows / 2, Columns / 2] = "[CENTER]";
+            Tree[Columns / 2, Rows / 2] = "[CENTER]";
+            SetCenter(new Point(Columns / 2, Rows / 2));
+        }
+
+        private void SetCenterText(Point center)
+        {
+            Tree[center.Y, center.X] = "[CENTER]";
+        }
+
+        public void ReplaceCenter(Point center)
+        {
+            Set(GetCenter().Y, GetCenter().X, "");
+            SetCenter(new Point(center.Y, center.X));
+        }
+
+        public Point GetCenter()
+        {
+            return this.Center;
+        }
+
+        public void SetCenter(Point center)
+        {
+            this.Center = center;
         }
 
         public static SkillTree Parse(string input)
@@ -96,6 +119,7 @@ namespace AoETreeEditor
 
             y = 0;
             string debugRow;
+            bool foundCenter = false;
             foreach(String line in lines)
             {
                 if (line.Length < 5) continue;
@@ -104,6 +128,11 @@ namespace AoETreeEditor
                 debugRow = "";
                 foreach (String entry in line.Split(new char[] { ',' }))
                 {
+                    if (entry == "[CENTER]")
+                    {
+                        output.SetCenter(new Point(x, y));
+                        foundCenter = true;
+                    }
                     output.Set(y, x++, entry);
                     debugRow += entry;
                     if (output.Columns > x) debugRow += ',';
@@ -112,6 +141,14 @@ namespace AoETreeEditor
                 y++;
             }
             Console.WriteLine($"Parse complete! Created tree with dimensions: {output.Rows} : {output.Columns}");
+            if (foundCenter)
+            {
+                Console.WriteLine($"and center at { output.GetCenter()}");
+            } else
+            {
+                Console.WriteLine($"With no center found!");
+                output.Center = new Point(-1, -1);
+            }
 
             return output;
         }

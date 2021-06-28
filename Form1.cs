@@ -25,6 +25,7 @@ namespace AoETreeEditor
         static bool IsOpenedFile = false;
         static string OpenedFilePath = "";
         static string OpenedFileName = "";
+        static DataGridView temp;
 
         public Form1()
         {
@@ -38,6 +39,8 @@ namespace AoETreeEditor
             SetDoubleBuffer(viewport, true);
             viewport.Width = Width - 40;
             viewport.Height = Height - 90;
+            temp = viewport;
+            temp.Hide();
             Enabled = false;
             UseWaitCursor = true;
             loadingBar.Show();
@@ -118,6 +121,8 @@ namespace AoETreeEditor
         private void InitSheet(bool isBlank)
         {
             Console.WriteLine($"Attempting to initialize tree...");
+            viewport = temp;
+            viewport.Show();
             if (!isBlank)
             {
                 tree = SkillTree.Parse(File.ReadAllText(OpenedFilePath));
@@ -130,34 +135,82 @@ namespace AoETreeEditor
             viewport.ColumnCount = tree.Columns;
 
             int size = 60;
-            int rowIndex = 0;
-            foreach (DataGridViewRow row in viewport.Rows) 
+
+            foreach (DataGridViewRow row in viewport.Rows)
             {
-                int columnIndex = 0;
-                row.Height = size; 
+                row.Height = size;
+                foreach (DataGridViewColumn column in viewport.Columns)
+                {
+                    column.Width = size;
+                }
                 foreach (DataGridViewCell cell in row.Cells)
                 {
-                    if (tree.Get(rowIndex, columnIndex) != null && tree.Get(rowIndex, columnIndex).Length > 8)
+                    cell.Value = "";
+                    if (tree.Get(cell.ColumnIndex, cell.RowIndex) != null) 
+                        cell.Value = Regex.Replace(tree.Get(cell.ColumnIndex, cell.RowIndex), "(.{9})", "$1" + Environment.NewLine);
+                    if (cell.ColumnIndex % 2 == 0 || cell.RowIndex % 2 == 0)
                     {
-                        cell.Value = Regex.Replace(tree.Get(rowIndex, columnIndex), "(.{8})", "$1" + Environment.NewLine);
-                        if (cell.Value.ToString() == "[CENTER]")
-                        {
-                            viewport.FirstDisplayedCell = cell;
-                        }
-                    }
-                    else
+                        cell.Style.BackColor = Color.FromArgb(25, 25, 25);
+                    } else cell.Style.BackColor = Color.FromArgb(5, 5, 5);
+                    if (cell.ColumnIndex == tree.GetCenter().X || cell.RowIndex == tree.GetCenter().Y) cell.Style.BackColor = Color.FromArgb(90, 90, 90);
+                    if (cell.ColumnIndex == tree.GetCenter().X && cell.RowIndex == tree.GetCenter().Y)
                     {
-                        cell.Value = tree.Get(rowIndex, columnIndex);
+                        cell.Style.BackColor = Color.FromArgb(190, 190, 0); ;
+                        cell.Style.ForeColor = Color.FromArgb(0, 0, 0); ;
                     }
-                    columnIndex++;
                 }
-                rowIndex++;
             }
 
-            foreach (DataGridViewColumn column in viewport.Columns) column.Width = size;
             viewport.ColumnHeadersVisible = false;
             viewport.RowHeadersVisible = false;
-            viewport.MultiSelect = false;
+            //viewport.MultiSelect = false;
+
+            BuildContextMenu();
+        }
+
+        private void InitSheet(SkillTree inputTree)
+        {
+            Console.WriteLine($"Attempting to initialize tree...");
+            viewport = temp;
+            viewport.Show();
+
+            tree = inputTree;
+
+            viewport.RowCount = tree.Rows;
+            viewport.ColumnCount = tree.Columns;
+
+            int size = 60;
+
+            foreach (DataGridViewRow row in viewport.Rows)
+            {
+                row.Height = size;
+                foreach (DataGridViewColumn column in viewport.Columns)
+                {
+                    column.Width = size;
+                }
+                foreach (DataGridViewCell cell in row.Cells)
+                {
+                    if (tree.Get(cell.ColumnIndex, cell.RowIndex) != null)
+                        cell.Value = Regex.Replace(tree.Get(cell.ColumnIndex, cell.RowIndex), "(.{9})", "$1" + Environment.NewLine);
+                    if (cell.ColumnIndex % 2 == 0 || cell.RowIndex % 2 == 0)
+                    {
+                        cell.Style.BackColor = Color.FromArgb(25, 25, 25);
+                    }
+                    else cell.Style.BackColor = Color.FromArgb(5, 5, 5);
+                    if (cell.ColumnIndex == tree.GetCenter().X || cell.RowIndex == tree.GetCenter().Y) cell.Style.BackColor = Color.FromArgb(90, 90, 90);
+                    if (cell.ColumnIndex == tree.GetCenter().X && cell.RowIndex == tree.GetCenter().Y)
+                    {
+                        cell.Style.BackColor = Color.FromArgb(190, 190, 0); ;
+                        cell.Style.ForeColor = Color.FromArgb(0, 0, 0); ;
+                    }
+                }
+            }
+
+            viewport.ColumnHeadersVisible = false;
+            viewport.RowHeadersVisible = false;
+            //viewport.MultiSelect = false;
+
+            BuildContextMenu();
 
             BuildContextMenu();
         }
@@ -184,7 +237,7 @@ namespace AoETreeEditor
         private void backgroundWorker1_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
         {
             Console.WriteLine("COMPLETED WORK");
-            InitSheet(!IsOpenedFile);
+            InitSheet(tree);
             loadingBar.SetCurrentValue(0);
             loadingBar.Hide();
             thisForm.Activate();
@@ -307,8 +360,13 @@ namespace AoETreeEditor
             foreach (DataGridViewCell cell in viewport.SelectedCells)
             {
                 cell.Value = Regex.Replace(s.Text, "(.{9})", "$1" + Environment.NewLine);
-                tree.Set(cell.ColumnIndex, cell.RowIndex, s.Text);
+                tree.Set(cell.RowIndex, cell.ColumnIndex, s.Text);
                 selectedValue.Text = s.Text;
+                if (s.Text == "[CENTER]")
+                {
+                    tree.ReplaceCenter(new Point(cell.RowIndex, cell.ColumnIndex));
+                    InitSheet(tree);
+                }
             }
         }
 
@@ -348,6 +406,7 @@ namespace AoETreeEditor
         {
             Directory.CreateDirectory(Directory.GetCurrentDirectory() + "\\Saved Trees");
             openFileDialog1.InitialDirectory = Directory.GetCurrentDirectory() + "\\Saved Trees";
+            openFileDialog1.FileName = OpenedFileName;
             openFileDialog1.ShowDialog();
         }
 
@@ -385,6 +444,28 @@ namespace AoETreeEditor
         private void newTreeToolStripMenuItem_Click(object sender, EventArgs e)
         {
             InitSheet(true);
+        }
+
+        protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
+        {
+            {
+                // Delete Key - Delete Selected Row!
+                if (keyData == Keys.Delete)
+                {
+                    DeleteSelectedCells();
+                    return true;
+                }
+                return base.ProcessCmdKey(ref msg, keyData);
+            }
+        }
+
+        private void DeleteSelectedCells()
+        {
+            foreach(DataGridViewCell cell in viewport.SelectedCells)
+            {
+                cell.Value = "";
+                tree.Set(cell.RowIndex, cell.ColumnIndex, "");
+            }
         }
     }
 }

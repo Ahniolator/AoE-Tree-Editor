@@ -33,8 +33,9 @@ namespace AoETreeEditor
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.reloadSkillsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.newTreeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.reloadSkillsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saveAsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -43,7 +44,6 @@ namespace AoETreeEditor
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.selectedValue = new System.Windows.Forms.Label();
-            this.newTreeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.viewport)).BeginInit();
             this.SuspendLayout();
@@ -72,38 +72,45 @@ namespace AoETreeEditor
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
             this.fileToolStripMenuItem.Text = "File";
             // 
-            // reloadSkillsToolStripMenuItem
+            // newTreeToolStripMenuItem
             // 
-            this.reloadSkillsToolStripMenuItem.Name = "reloadSkillsToolStripMenuItem";
-            this.reloadSkillsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.reloadSkillsToolStripMenuItem.Text = "Reload Perks";
-            this.reloadSkillsToolStripMenuItem.Click += new System.EventHandler(this.reloadSkillsToolStripMenuItem_Click);
+            this.newTreeToolStripMenuItem.Name = "newTreeToolStripMenuItem";
+            this.newTreeToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
+            this.newTreeToolStripMenuItem.Text = "New Tree";
+            this.newTreeToolStripMenuItem.Click += new System.EventHandler(this.newTreeToolStripMenuItem_Click);
             // 
             // openToolStripMenuItem
             // 
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
             this.openToolStripMenuItem.Text = "Open Tree";
             this.openToolStripMenuItem.Click += new System.EventHandler(this.openToolStripMenuItem_Click);
+            // 
+            // reloadSkillsToolStripMenuItem
+            // 
+            this.reloadSkillsToolStripMenuItem.Name = "reloadSkillsToolStripMenuItem";
+            this.reloadSkillsToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
+            this.reloadSkillsToolStripMenuItem.Text = "Reload Perks";
+            this.reloadSkillsToolStripMenuItem.Click += new System.EventHandler(this.reloadSkillsToolStripMenuItem_Click);
             // 
             // saveToolStripMenuItem
             // 
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
             this.saveToolStripMenuItem.Text = "Save";
             this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
             // 
             // saveAsToolStripMenuItem
             // 
             this.saveAsToolStripMenuItem.Name = "saveAsToolStripMenuItem";
-            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
             this.saveAsToolStripMenuItem.Text = "Save As";
             this.saveAsToolStripMenuItem.Click += new System.EventHandler(this.saveAsToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -115,8 +122,8 @@ namespace AoETreeEditor
             this.viewport.AllowUserToResizeRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Gray;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.ActiveCaption;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
             this.viewport.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.viewport.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.viewport.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -125,13 +132,12 @@ namespace AoETreeEditor
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.WindowText;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Lucida Console", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Gray;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.ActiveCaption;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.viewport.DefaultCellStyle = dataGridViewCellStyle2;
             this.viewport.GridColor = System.Drawing.SystemColors.ControlDarkDark;
             this.viewport.Location = new System.Drawing.Point(12, 38);
-            this.viewport.MultiSelect = false;
             this.viewport.Name = "viewport";
             this.viewport.ReadOnly = true;
             this.viewport.RowHeadersVisible = false;
@@ -176,13 +182,6 @@ namespace AoETreeEditor
             this.selectedValue.Text = "Select a cell.";
             this.selectedValue.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.selectedValue.TextChanged += new System.EventHandler(this.selectedValue_TextChanged);
-            // 
-            // newTreeToolStripMenuItem
-            // 
-            this.newTreeToolStripMenuItem.Name = "newTreeToolStripMenuItem";
-            this.newTreeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.newTreeToolStripMenuItem.Text = "New Tree";
-            this.newTreeToolStripMenuItem.Click += new System.EventHandler(this.newTreeToolStripMenuItem_Click);
             // 
             // Form1
             // 
