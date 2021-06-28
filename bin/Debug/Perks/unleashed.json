@@ -1,0 +1,31 @@
+{
+  "type": "SPECIAL",
+  "identifier": "unleashed",
+  "lock_under_adv": "",
+  "icon": "mmorpg:textures/gui/talent_icons/unleashed.png",
+  "is_entry": false,
+  "lvl_req": 1,
+  "stats": [
+    {
+      "v1": 5.0,
+      "v2": 0.0,
+      "stat": "chance_to_give_bloodlust_to_self",
+      "type": "FLAT",
+      "scale_to_lvl": false
+    },
+    {
+      "v1": 5.0,
+      "v2": 0.0,
+      "stat": "attack_speed",
+      "type": "FLAT",
+      "scale_to_lvl": false
+    },
+    {
+      "v1": -10.0,
+      "v2": 0.0,
+      "stat": "health",
+      "type": "LOCAL_INCREASE",
+      "scale_to_lvl": false
+    }
+  ]
+}

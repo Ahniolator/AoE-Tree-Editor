@@ -1,0 +1,24 @@
+{
+  "type": "SPECIAL",
+  "identifier": "falling_dragon",
+  "lock_under_adv": "",
+  "icon": "mmorpg:textures/gui/talent_icons/falling_dragon.png",
+  "is_entry": false,
+  "lvl_req": 1,
+  "stats": [
+    {
+      "v1": 5.0,
+      "v2": 0.0,
+      "stat": "mana_cost",
+      "type": "FLAT",
+      "scale_to_lvl": false
+    },
+    {
+      "v1": 10.0,
+      "v2": 0.0,
+      "stat": "technique_spell_dmg",
+      "type": "FLAT",
+      "scale_to_lvl": false
+    }
+  ]
+}

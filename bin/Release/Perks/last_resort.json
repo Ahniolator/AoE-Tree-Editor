@@ -1,0 +1,17 @@
+{
+  "type": "SPECIAL",
+  "identifier": "last_resort",
+  "lock_under_adv": "",
+  "icon": "mmorpg:textures/gui/talent_icons/last_resort.png",
+  "is_entry": false,
+  "lvl_req": 1,
+  "stats": [
+    {
+      "v1": 15.0,
+      "v2": 0.0,
+      "stat": "heal_on_shielded_targets",
+      "type": "FLAT",
+      "scale_to_lvl": false
+    }
+  ]
+}

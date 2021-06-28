@@ -1,0 +1,38 @@
+{
+  "type": "MAJOR",
+  "identifier": "something_is_watching",
+  "lock_under_adv": "",
+  "icon": "mmorpg:textures/gui/stat_icons/game_changers/something_is_watching.png",
+  "is_entry": false,
+  "lvl_req": 1,
+  "stats": [
+    {
+      "v1": -15.0,
+      "v2": 0.0,
+      "stat": "total_damage",
+      "type": "FLAT",
+      "scale_to_lvl": false
+    },
+    {
+      "v1": -15.0,
+      "v2": 0.0,
+      "stat": "elemental_resist",
+      "type": "FLAT",
+      "scale_to_lvl": false
+    },
+    {
+      "v1": 1.0,
+      "v2": 0.0,
+      "stat": "blessing_on_spell_kill",
+      "type": "FLAT",
+      "scale_to_lvl": false
+    },
+    {
+      "v1": 1.0,
+      "v2": 0.0,
+      "stat": "mark_on_basic_atk_kill",
+      "type": "FLAT",
+      "scale_to_lvl": false
+    }
+  ]
+}

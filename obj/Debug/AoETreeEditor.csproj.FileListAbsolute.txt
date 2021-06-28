@@ -1,0 +1,15 @@
+C:\Users\Byron Kamps\source\repos\AoETreeEditor\bin\Debug\AoETreeEditor.exe.config
+C:\Users\Byron Kamps\source\repos\AoETreeEditor\bin\Debug\AoETreeEditor.exe
+C:\Users\Byron Kamps\source\repos\AoETreeEditor\bin\Debug\AoETreeEditor.pdb
+C:\Users\Byron Kamps\source\repos\AoETreeEditor\obj\Debug\AoETreeEditor.csproj.AssemblyReference.cache
+C:\Users\Byron Kamps\source\repos\AoETreeEditor\obj\Debug\AoETreeEditor.Form1.resources
+C:\Users\Byron Kamps\source\repos\AoETreeEditor\obj\Debug\AoETreeEditor.Properties.Resources.resources
+C:\Users\Byron Kamps\source\repos\AoETreeEditor\obj\Debug\AoETreeEditor.csproj.GenerateResource.cache
+C:\Users\Byron Kamps\source\repos\AoETreeEditor\obj\Debug\AoETreeEditor.csproj.CoreCompileInputs.cache
+C:\Users\Byron Kamps\source\repos\AoETreeEditor\obj\Debug\AoETreeEditor.exe
+C:\Users\Byron Kamps\source\repos\AoETreeEditor\obj\Debug\AoETreeEditor.pdb
+C:\Users\Byron Kamps\source\repos\AoETreeEditor\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Byron Kamps\source\repos\AoETreeEditor\obj\Debug\AoETreeEditor.csproj.CopyComplete
+C:\Users\Byron Kamps\source\repos\AoETreeEditor\obj\Debug\AoETreeEditor.LoadingBar.resources
+C:\Users\Byron Kamps\source\repos\AoETreeEditor\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\Byron Kamps\source\repos\AoETreeEditor\obj\Debug\AoETreeEditor.csproj.Fody.CopyLocal.cache

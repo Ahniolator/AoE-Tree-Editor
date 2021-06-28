@@ -1,0 +1,24 @@
+{
+  "type": "SPECIAL",
+  "identifier": "deceiver",
+  "lock_under_adv": "",
+  "icon": "mmorpg:textures/gui/talent_icons/deceiver.png",
+  "is_entry": false,
+  "lvl_req": 1,
+  "stats": [
+    {
+      "v1": 10.0,
+      "v2": 0.0,
+      "stat": "chance_to_get_mark_on_kill",
+      "type": "FLAT",
+      "scale_to_lvl": false
+    },
+    {
+      "v1": 5.0,
+      "v2": 0.0,
+      "stat": "shield_duration",
+      "type": "FLAT",
+      "scale_to_lvl": false
+    }
+  ]
+}

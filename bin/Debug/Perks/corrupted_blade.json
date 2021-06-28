@@ -1,0 +1,17 @@
+{
+  "type": "SPECIAL",
+  "identifier": "corrupted_blade",
+  "lock_under_adv": "",
+  "icon": "mmorpg:textures/gui/talent_icons/corrupted_blade.png",
+  "is_entry": false,
+  "lvl_req": 1,
+  "stats": [
+    {
+      "v1": 5.0,
+      "v2": 0.0,
+      "stat": "chance_to_get_mark_on_kill",
+      "type": "FLAT",
+      "scale_to_lvl": false
+    }
+  ]
+}

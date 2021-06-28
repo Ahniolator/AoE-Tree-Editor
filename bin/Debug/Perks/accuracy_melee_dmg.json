@@ -1,0 +1,24 @@
+{
+  "type": "STAT",
+  "identifier": "accuracy_melee_dmg",
+  "lock_under_adv": "",
+  "icon": "mmorpg:textures/gui/stat_icons/main/accuracy.png",
+  "is_entry": false,
+  "lvl_req": 1,
+  "stats": [
+    {
+      "v1": 50.0,
+      "v2": 0.0,
+      "stat": "accuracy",
+      "type": "FLAT",
+      "scale_to_lvl": false
+    },
+    {
+      "v1": 5.0,
+      "v2": 0.0,
+      "stat": "melee_dmg",
+      "type": "FLAT",
+      "scale_to_lvl": false
+    }
+  ]
+}

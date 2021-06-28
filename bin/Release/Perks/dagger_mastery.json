@@ -1,0 +1,31 @@
+{
+  "type": "SPECIAL",
+  "identifier": "dagger_mastery",
+  "lock_under_adv": "",
+  "icon": "mmorpg:textures/gui/talent_icons/dagger_mastery.png",
+  "is_entry": false,
+  "lvl_req": 1,
+  "stats": [
+    {
+      "v1": 5.0,
+      "v2": 0.0,
+      "stat": "dagger_damage",
+      "type": "FLAT",
+      "scale_to_lvl": false
+    },
+    {
+      "v1": 5.0,
+      "v2": 0.0,
+      "stat": "attack_speed",
+      "type": "FLAT",
+      "scale_to_lvl": false
+    },
+    {
+      "v1": 3.0,
+      "v2": 0.0,
+      "stat": "critical_hit",
+      "type": "FLAT",
+      "scale_to_lvl": false
+    }
+  ]
+}

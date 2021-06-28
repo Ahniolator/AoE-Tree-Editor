@@ -1,0 +1,17 @@
+{
+  "type": "SPECIAL",
+  "identifier": "dual_wield",
+  "lock_under_adv": "",
+  "icon": "mmorpg:textures/gui/talent_icons/dual_wield.png",
+  "is_entry": false,
+  "lvl_req": 1,
+  "stats": [
+    {
+      "v1": 10.0,
+      "v2": 0.0,
+      "stat": "dual_wield_dmg",
+      "type": "FLAT",
+      "scale_to_lvl": false
+    }
+  ]
+}

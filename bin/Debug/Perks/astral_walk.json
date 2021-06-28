@@ -1,0 +1,24 @@
+{
+  "type": "SPECIAL",
+  "identifier": "astral_walk",
+  "lock_under_adv": "",
+  "icon": "mmorpg:textures/gui/talent_icons/astral_walk.png",
+  "is_entry": false,
+  "lvl_req": 1,
+  "stats": [
+    {
+      "v1": 3.0,
+      "v2": 0.0,
+      "stat": "move_speed",
+      "type": "FLAT",
+      "scale_to_lvl": false
+    },
+    {
+      "v1": 10.0,
+      "v2": 0.0,
+      "stat": "wisdom",
+      "type": "FLAT",
+      "scale_to_lvl": false
+    }
+  ]
+}

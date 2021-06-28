@@ -1,0 +1,38 @@
+{
+  "type": "SPECIAL",
+  "identifier": "open_seal",
+  "lock_under_adv": "",
+  "icon": "mmorpg:textures/gui/talent_icons/open_seal.png",
+  "is_entry": false,
+  "lvl_req": 1,
+  "stats": [
+    {
+      "v1": 5.0,
+      "v2": 0.0,
+      "stat": "spell_fire_damage",
+      "type": "FLAT",
+      "scale_to_lvl": false
+    },
+    {
+      "v1": 5.0,
+      "v2": 0.0,
+      "stat": "spell_dark_damage",
+      "type": "FLAT",
+      "scale_to_lvl": false
+    },
+    {
+      "v1": 2.0,
+      "v2": 0.0,
+      "stat": "spell_critical_hit",
+      "type": "FLAT",
+      "scale_to_lvl": false
+    },
+    {
+      "v1": 5.0,
+      "v2": 0.0,
+      "stat": "spell_critical_damage",
+      "type": "FLAT",
+      "scale_to_lvl": false
+    }
+  ]
+}

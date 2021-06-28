@@ -1,0 +1,24 @@
+{
+  "type": "SPECIAL",
+  "identifier": "damage_shield_more_health",
+  "lock_under_adv": "",
+  "icon": "mmorpg:textures/gui/talent_icons/damage_shield_more_health.png",
+  "is_entry": false,
+  "lvl_req": 1,
+  "stats": [
+    {
+      "v1": 10.0,
+      "v2": 0.0,
+      "stat": "shield_strength",
+      "type": "FLAT",
+      "scale_to_lvl": false
+    },
+    {
+      "v1": 10.0,
+      "v2": 0.0,
+      "stat": "health",
+      "type": "LOCAL_INCREASE",
+      "scale_to_lvl": false
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "type": "SPECIAL",
+  "identifier": "conquerer",
+  "lock_under_adv": "",
+  "icon": "mmorpg:textures/gui/talent_icons/conquerer.png",
+  "is_entry": false,
+  "lvl_req": 1,
+  "stats": [
+    {
+      "v1": 10.0,
+      "v2": 0.0,
+      "stat": "chance_to_get_blessing_on_kill",
+      "type": "FLAT",
+      "scale_to_lvl": false
+    },
+    {
+      "v1": 15.0,
+      "v2": 0.0,
+      "stat": "shield_strength",
+      "type": "FLAT",
+      "scale_to_lvl": false
+    }
+  ]
+}

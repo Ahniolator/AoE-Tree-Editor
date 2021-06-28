@@ -1,0 +1,31 @@
+{
+  "type": "SPECIAL",
+  "identifier": "big_heart_of_light",
+  "lock_under_adv": "",
+  "icon": "mmorpg:textures/gui/talent_icons/big_heart_of_light.png",
+  "is_entry": false,
+  "lvl_req": 1,
+  "stats": [
+    {
+      "v1": 10.0,
+      "v2": 0.0,
+      "stat": "spell_light_damage",
+      "type": "FLAT",
+      "scale_to_lvl": false
+    },
+    {
+      "v1": 2.0,
+      "v2": 0.0,
+      "stat": "light_penetration",
+      "type": "FLAT",
+      "scale_to_lvl": false
+    },
+    {
+      "v1": 2.0,
+      "v2": 0.0,
+      "stat": "light_health_leech",
+      "type": "FLAT",
+      "scale_to_lvl": false
+    }
+  ]
+}

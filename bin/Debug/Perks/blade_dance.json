@@ -1,0 +1,17 @@
+{
+  "type": "SPECIAL",
+  "identifier": "blade_dance",
+  "lock_under_adv": "",
+  "icon": "mmorpg:textures/gui/talent_icons/blade_dance.png",
+  "is_entry": false,
+  "lvl_req": 1,
+  "stats": [
+    {
+      "v1": 10.0,
+      "v2": 0.0,
+      "stat": "chance_on_basic_atk_to_give_blade_dance_to_self",
+      "type": "FLAT",
+      "scale_to_lvl": false
+    }
+  ]
+}

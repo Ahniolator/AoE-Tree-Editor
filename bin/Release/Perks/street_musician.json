@@ -1,0 +1,17 @@
+{
+  "type": "SPECIAL",
+  "identifier": "street_musician",
+  "lock_under_adv": "",
+  "icon": "mmorpg:textures/gui/talent_icons/street_musician.png",
+  "is_entry": false,
+  "lvl_req": 1,
+  "stats": [
+    {
+      "v1": 10.0,
+      "v2": 0.0,
+      "stat": "inc_effect_of_song_buff_given",
+      "type": "FLAT",
+      "scale_to_lvl": false
+    }
+  ]
+}

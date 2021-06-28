@@ -1,0 +1,17 @@
+{
+  "type": "SPECIAL",
+  "identifier": "big_dot_damage",
+  "lock_under_adv": "",
+  "icon": "mmorpg:textures/gui/talent_icons/big_dot_damage.png",
+  "is_entry": false,
+  "lvl_req": 1,
+  "stats": [
+    {
+      "v1": 10.0,
+      "v2": 0.0,
+      "stat": "dot_dmg",
+      "type": "FLAT",
+      "scale_to_lvl": false
+    }
+  ]
+}

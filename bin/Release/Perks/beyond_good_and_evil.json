@@ -1,0 +1,17 @@
+{
+  "type": "SPECIAL",
+  "identifier": "beyond_good_and_evil",
+  "lock_under_adv": "",
+  "icon": "mmorpg:textures/gui/talent_icons/beyond_good_and_evil.png",
+  "is_entry": false,
+  "lvl_req": 1,
+  "stats": [
+    {
+      "v1": -20.0,
+      "v2": 0.0,
+      "stat": "negative_eff_duration",
+      "type": "FLAT",
+      "scale_to_lvl": false
+    }
+  ]
+}

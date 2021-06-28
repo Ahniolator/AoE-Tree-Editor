@@ -1,0 +1,31 @@
+{
+  "type": "SPECIAL",
+  "identifier": "pentagram",
+  "lock_under_adv": "",
+  "icon": "mmorpg:textures/gui/talent_icons/pentagram.png",
+  "is_entry": false,
+  "lvl_req": 1,
+  "stats": [
+    {
+      "v1": 3.0,
+      "v2": 0.0,
+      "stat": "all_fire_damage",
+      "type": "FLAT",
+      "scale_to_lvl": false
+    },
+    {
+      "v1": 3.0,
+      "v2": 0.0,
+      "stat": "all_dark_damage",
+      "type": "FLAT",
+      "scale_to_lvl": false
+    },
+    {
+      "v1": -5.0,
+      "v2": 0.0,
+      "stat": "light_resist",
+      "type": "FLAT",
+      "scale_to_lvl": false
+    }
+  ]
+}

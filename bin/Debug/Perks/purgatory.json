@@ -1,0 +1,31 @@
+{
+  "type": "SPECIAL",
+  "identifier": "purgatory",
+  "lock_under_adv": "",
+  "icon": "mmorpg:textures/gui/talent_icons/purgatory.png",
+  "is_entry": false,
+  "lvl_req": 1,
+  "stats": [
+    {
+      "v1": 10.0,
+      "v2": 0.0,
+      "stat": "critical_damage",
+      "type": "FLAT",
+      "scale_to_lvl": false
+    },
+    {
+      "v1": 10.0,
+      "v2": 0.0,
+      "stat": "dmg_when_low_hp",
+      "type": "FLAT",
+      "scale_to_lvl": false
+    },
+    {
+      "v1": 50.0,
+      "v2": 0.0,
+      "stat": "health",
+      "type": "FLAT",
+      "scale_to_lvl": false
+    }
+  ]
+}

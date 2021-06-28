@@ -1,0 +1,24 @@
+{
+  "type": "SPECIAL",
+  "identifier": "gathering_storm",
+  "lock_under_adv": "",
+  "icon": "mmorpg:textures/gui/talent_icons/gathering_storm.png",
+  "is_entry": false,
+  "lvl_req": 1,
+  "stats": [
+    {
+      "v1": 25.0,
+      "v2": 0.0,
+      "stat": "chance_on_basic_atk_to_give_gather_storm_to_self",
+      "type": "FLAT",
+      "scale_to_lvl": false
+    },
+    {
+      "v1": 10.0,
+      "v2": 0.0,
+      "stat": "inc_aoe",
+      "type": "FLAT",
+      "scale_to_lvl": false
+    }
+  ]
+}

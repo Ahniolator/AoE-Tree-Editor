@@ -1,0 +1,31 @@
+{
+  "type": "SPECIAL",
+  "identifier": "far_reaching_aim",
+  "lock_under_adv": "",
+  "icon": "mmorpg:textures/gui/talent_icons/far_reaching_aim.png",
+  "is_entry": false,
+  "lvl_req": 1,
+  "stats": [
+    {
+      "v1": 100.0,
+      "v2": 0.0,
+      "stat": "accuracy",
+      "type": "FLAT",
+      "scale_to_lvl": false
+    },
+    {
+      "v1": 1.0,
+      "v2": 0.0,
+      "stat": "critical_hit_per_10_dexterity",
+      "type": "FLAT",
+      "scale_to_lvl": false
+    },
+    {
+      "v1": 3.0,
+      "v2": 0.0,
+      "stat": "ranged_dmg",
+      "type": "FLAT",
+      "scale_to_lvl": false
+    }
+  ]
+}

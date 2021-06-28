@@ -1,0 +1,17 @@
+{
+  "type": "STAT",
+  "identifier": "day_night_dmg",
+  "lock_under_adv": "",
+  "icon": "mmorpg:textures/gui/stat_icons/misc/day_night_dmg.png",
+  "is_entry": false,
+  "lvl_req": 1,
+  "stats": [
+    {
+      "v1": 3.0,
+      "v2": 0.0,
+      "stat": "day_night_dmg",
+      "type": "FLAT",
+      "scale_to_lvl": false
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "type": "STAT",
+  "identifier": "inc_aura_effect",
+  "lock_under_adv": "",
+  "icon": "mmorpg:textures/gui/stat_icons/misc/inc_effect_of_auras_given.png",
+  "is_entry": false,
+  "lvl_req": 1,
+  "stats": [
+    {
+      "v1": 2.0,
+      "v2": 0.0,
+      "stat": "inc_effect_of_auras_given",
+      "type": "FLAT",
+      "scale_to_lvl": false
+    }
+  ]
+}

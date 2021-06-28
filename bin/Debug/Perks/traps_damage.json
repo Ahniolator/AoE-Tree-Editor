@@ -1,0 +1,17 @@
+{
+  "type": "SPECIAL",
+  "identifier": "traps_damage",
+  "lock_under_adv": "",
+  "icon": "mmorpg:textures/gui/talent_icons/traps_damage.png",
+  "is_entry": false,
+  "lvl_req": 1,
+  "stats": [
+    {
+      "v1": 20.0,
+      "v2": 0.0,
+      "stat": "trap_spell_dmg",
+      "type": "FLAT",
+      "scale_to_lvl": false
+    }
+  ]
+}

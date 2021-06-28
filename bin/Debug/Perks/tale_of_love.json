@@ -1,0 +1,17 @@
+{
+  "type": "SPECIAL",
+  "identifier": "tale_of_love",
+  "lock_under_adv": "",
+  "icon": "mmorpg:textures/gui/talent_icons/tale_of_love.png",
+  "is_entry": false,
+  "lvl_req": 1,
+  "stats": [
+    {
+      "v1": 10.0,
+      "v2": 0.0,
+      "stat": "chance_of_mana_reg_on_heal_crit",
+      "type": "FLAT",
+      "scale_to_lvl": false
+    }
+  ]
+}

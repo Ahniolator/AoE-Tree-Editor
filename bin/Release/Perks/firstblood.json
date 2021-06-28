@@ -1,0 +1,17 @@
+{
+  "type": "SPECIAL",
+  "identifier": "firstblood",
+  "lock_under_adv": "",
+  "icon": "mmorpg:textures/gui/talent_icons/firstblood.png",
+  "is_entry": false,
+  "lvl_req": 1,
+  "stats": [
+    {
+      "v1": 15.0,
+      "v2": 0.0,
+      "stat": "dmg_when_target_near_full_hp",
+      "type": "FLAT",
+      "scale_to_lvl": false
+    }
+  ]
+}

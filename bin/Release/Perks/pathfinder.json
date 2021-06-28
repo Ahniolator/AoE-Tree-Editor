@@ -1,0 +1,31 @@
+{
+  "type": "SPECIAL",
+  "identifier": "pathfinder",
+  "lock_under_adv": "",
+  "icon": "mmorpg:textures/gui/talent_icons/pathfinder.png",
+  "is_entry": false,
+  "lvl_req": 1,
+  "stats": [
+    {
+      "v1": 5.0,
+      "v2": 0.0,
+      "stat": "move_speed",
+      "type": "FLAT",
+      "scale_to_lvl": false
+    },
+    {
+      "v1": 5.0,
+      "v2": 0.0,
+      "stat": "agility",
+      "type": "FLAT",
+      "scale_to_lvl": false
+    },
+    {
+      "v1": 5.0,
+      "v2": 0.0,
+      "stat": "dexterity",
+      "type": "FLAT",
+      "scale_to_lvl": false
+    }
+  ]
+}

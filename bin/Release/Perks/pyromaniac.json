@@ -1,0 +1,31 @@
+{
+  "type": "SPECIAL",
+  "identifier": "pyromaniac",
+  "lock_under_adv": "",
+  "icon": "mmorpg:textures/gui/talent_icons/pyromaniac.png",
+  "is_entry": false,
+  "lvl_req": 1,
+  "stats": [
+    {
+      "v1": 5.0,
+      "v2": 0.0,
+      "stat": "inc_aoe",
+      "type": "FLAT",
+      "scale_to_lvl": false
+    },
+    {
+      "v1": 3.0,
+      "v2": 0.0,
+      "stat": "chance_of_burn",
+      "type": "FLAT",
+      "scale_to_lvl": false
+    },
+    {
+      "v1": 5.0,
+      "v2": 0.0,
+      "stat": "all_fire_damage",
+      "type": "FLAT",
+      "scale_to_lvl": false
+    }
+  ]
+}

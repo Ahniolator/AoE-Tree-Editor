@@ -1,0 +1,31 @@
+{
+  "type": "SPECIAL",
+  "identifier": "trinity",
+  "lock_under_adv": "",
+  "icon": "mmorpg:textures/gui/talent_icons/trinity.png",
+  "is_entry": false,
+  "lvl_req": 1,
+  "stats": [
+    {
+      "v1": 5.0,
+      "v2": 0.0,
+      "stat": "crit_heal_chance",
+      "type": "FLAT",
+      "scale_to_lvl": false
+    },
+    {
+      "v1": 10.0,
+      "v2": 0.0,
+      "stat": "increase_healing",
+      "type": "FLAT",
+      "scale_to_lvl": false
+    },
+    {
+      "v1": 5.0,
+      "v2": 0.0,
+      "stat": "heal_effect_on_self",
+      "type": "FLAT",
+      "scale_to_lvl": false
+    }
+  ]
+}

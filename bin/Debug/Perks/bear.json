@@ -1,0 +1,39 @@
+{
+  "type": "MAJOR",
+  "identifier": "bear",
+  "lock_under_adv": "",
+  "icon": "mmorpg:textures/gui/stat_icons/game_changers/bear.png",
+  "one_of_a_kind": "animal",
+  "is_entry": false,
+  "lvl_req": 1,
+  "stats": [
+    {
+      "v1": 10.0,
+      "v2": 0.0,
+      "stat": "nature_health_leech",
+      "type": "FLAT",
+      "scale_to_lvl": false
+    },
+    {
+      "v1": -10.0,
+      "v2": 0.0,
+      "stat": "melee_dmg_received",
+      "type": "FLAT",
+      "scale_to_lvl": false
+    },
+    {
+      "v1": -20.0,
+      "v2": 0.0,
+      "stat": "move_speed",
+      "type": "FLAT",
+      "scale_to_lvl": false
+    },
+    {
+      "v1": -100.0,
+      "v2": 0.0,
+      "stat": "dodge",
+      "type": "LOCAL_INCREASE",
+      "scale_to_lvl": false
+    }
+  ]
+}

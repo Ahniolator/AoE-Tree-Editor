@@ -1,0 +1,31 @@
+{
+  "type": "SPECIAL",
+  "identifier": "devastation",
+  "lock_under_adv": "",
+  "icon": "mmorpg:textures/gui/talent_icons/devastation.png",
+  "is_entry": false,
+  "lvl_req": 1,
+  "stats": [
+    {
+      "v1": 10.0,
+      "v2": 0.0,
+      "stat": "area_dmg",
+      "type": "FLAT",
+      "scale_to_lvl": false
+    },
+    {
+      "v1": 10.0,
+      "v2": 0.0,
+      "stat": "inc_aoe",
+      "type": "FLAT",
+      "scale_to_lvl": false
+    },
+    {
+      "v1": -10.0,
+      "v2": 0.0,
+      "stat": "projectile_damage",
+      "type": "FLAT",
+      "scale_to_lvl": false
+    }
+  ]
+}

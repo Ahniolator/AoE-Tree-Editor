@@ -1,0 +1,17 @@
+{
+  "type": "SPECIAL",
+  "identifier": "thick_hide",
+  "lock_under_adv": "",
+  "icon": "mmorpg:textures/gui/talent_icons/thick_hide.png",
+  "is_entry": false,
+  "lvl_req": 1,
+  "stats": [
+    {
+      "v1": 25.0,
+      "v2": 0.0,
+      "stat": "health_per_10_dexterity",
+      "type": "FLAT",
+      "scale_to_lvl": false
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "type": "SPECIAL",
+  "identifier": "avatar_of_hope",
+  "lock_under_adv": "",
+  "icon": "mmorpg:textures/gui/talent_icons/avatar_of_hope.png",
+  "is_entry": false,
+  "lvl_req": 1,
+  "stats": [
+    {
+      "v1": 20.0,
+      "v2": 0.0,
+      "stat": "totem_cdr",
+      "type": "FLAT",
+      "scale_to_lvl": false
+    }
+  ]
+}

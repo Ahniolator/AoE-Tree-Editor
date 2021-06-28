@@ -1,0 +1,31 @@
+{
+  "type": "SPECIAL",
+  "identifier": "bone_grinder",
+  "lock_under_adv": "",
+  "icon": "mmorpg:textures/gui/talent_icons/bone_grinder.png",
+  "is_entry": false,
+  "lvl_req": 1,
+  "stats": [
+    {
+      "v1": 10.0,
+      "v2": 0.0,
+      "stat": "health_on_kill",
+      "type": "FLAT",
+      "scale_to_lvl": false
+    },
+    {
+      "v1": 10.0,
+      "v2": 0.0,
+      "stat": "mana_on_kill",
+      "type": "FLAT",
+      "scale_to_lvl": false
+    },
+    {
+      "v1": 10.0,
+      "v2": 0.0,
+      "stat": "chance_to_get_mark_on_kill",
+      "type": "FLAT",
+      "scale_to_lvl": false
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "type": "SPECIAL",
+  "identifier": "hammer_smash",
+  "lock_under_adv": "",
+  "icon": "mmorpg:textures/gui/talent_icons/hammer_smash.png",
+  "is_entry": false,
+  "lvl_req": 1,
+  "stats": [
+    {
+      "v1": 5.0,
+      "v2": 0.0,
+      "stat": "ele_hammer_damage",
+      "type": "FLAT",
+      "scale_to_lvl": false
+    },
+    {
+      "v1": 5.0,
+      "v2": 0.0,
+      "stat": "hammer_damage",
+      "type": "FLAT",
+      "scale_to_lvl": false
+    },
+    {
+      "v1": 15.0,
+      "v2": 0.0,
+      "stat": "health",
+      "type": "FLAT",
+      "scale_to_lvl": false
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "type": "SPECIAL",
+  "identifier": "violent_strike",
+  "lock_under_adv": "",
+  "icon": "mmorpg:textures/gui/talent_icons/violent_strike.png",
+  "is_entry": false,
+  "lvl_req": 1,
+  "stats": [
+    {
+      "v1": 5.0,
+      "v2": 0.0,
+      "stat": "attack_speed",
+      "type": "FLAT",
+      "scale_to_lvl": false
+    },
+    {
+      "v1": 5.0,
+      "v2": 0.0,
+      "stat": "armor_penetration",
+      "type": "FLAT",
+      "scale_to_lvl": false
+    },
+    {
+      "v1": 10.0,
+      "v2": 0.0,
+      "stat": "accuracy",
+      "type": "FLAT",
+      "scale_to_lvl": false
+    }
+  ]
+}

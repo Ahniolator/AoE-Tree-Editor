@@ -1,0 +1,17 @@
+{
+  "type": "SPECIAL",
+  "identifier": "call_of_the_other_ones",
+  "lock_under_adv": "",
+  "icon": "mmorpg:textures/gui/talent_icons/call_of_the_other_ones.png",
+  "is_entry": false,
+  "lvl_req": 1,
+  "stats": [
+    {
+      "v1": 20.0,
+      "v2": 0.0,
+      "stat": "inc_effect_of_negative_buff_given",
+      "type": "FLAT",
+      "scale_to_lvl": false
+    }
+  ]
+}

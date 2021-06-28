@@ -1,0 +1,17 @@
+{
+  "type": "SPECIAL",
+  "identifier": "huge_agi",
+  "lock_under_adv": "",
+  "icon": "mmorpg:textures/gui/talent_icons/huge_agi.png",
+  "is_entry": false,
+  "lvl_req": 1,
+  "stats": [
+    {
+      "v1": 10.0,
+      "v2": 0.0,
+      "stat": "agility",
+      "type": "FLAT",
+      "scale_to_lvl": false
+    }
+  ]
+}

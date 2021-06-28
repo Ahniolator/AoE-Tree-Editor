@@ -1,0 +1,24 @@
+{
+  "type": "MAJOR",
+  "identifier": "nightcrawler",
+  "lock_under_adv": "",
+  "icon": "mmorpg:textures/gui/stat_icons/game_changers/nightcrawler.png",
+  "is_entry": false,
+  "lvl_req": 1,
+  "stats": [
+    {
+      "v1": -100.0,
+      "v2": 0.0,
+      "stat": "magic_dmg",
+      "type": "FLAT",
+      "scale_to_lvl": false
+    },
+    {
+      "v1": 50.0,
+      "v2": 0.0,
+      "stat": "movement_cdr",
+      "type": "FLAT",
+      "scale_to_lvl": false
+    }
+  ]
+}

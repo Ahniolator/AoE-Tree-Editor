@@ -1,0 +1,17 @@
+{
+  "type": "SPECIAL",
+  "identifier": "hibernation",
+  "lock_under_adv": "",
+  "icon": "mmorpg:textures/gui/talent_icons/hibernation.png",
+  "is_entry": false,
+  "lvl_req": 1,
+  "stats": [
+    {
+      "v1": 1.0,
+      "v2": 0.0,
+      "stat": "health_regen_per_10_wisdom",
+      "type": "FLAT",
+      "scale_to_lvl": false
+    }
+  ]
+}

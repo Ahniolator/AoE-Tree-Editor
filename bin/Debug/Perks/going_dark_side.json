@@ -1,0 +1,24 @@
+{
+  "type": "MAJOR",
+  "identifier": "going_dark_side",
+  "lock_under_adv": "",
+  "icon": "mmorpg:textures/gui/stat_icons/game_changers/going_dark_side.png",
+  "is_entry": false,
+  "lvl_req": 1,
+  "stats": [
+    {
+      "v1": 25.0,
+      "v2": 0.0,
+      "stat": "all_dark_damage",
+      "type": "FLAT",
+      "scale_to_lvl": false
+    },
+    {
+      "v1": 1.0,
+      "v2": 0.0,
+      "stat": "light_vuln_crit",
+      "type": "FLAT",
+      "scale_to_lvl": false
+    }
+  ]
+}

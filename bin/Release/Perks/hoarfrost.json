@@ -1,0 +1,17 @@
+{
+  "type": "SPECIAL",
+  "identifier": "hoarfrost",
+  "lock_under_adv": "",
+  "icon": "mmorpg:textures/gui/talent_icons/hoarfrost.png",
+  "is_entry": false,
+  "lvl_req": 1,
+  "stats": [
+    {
+      "v1": 10.0,
+      "v2": 0.0,
+      "stat": "chance_of_spend_frostburn_for_double_dmg",
+      "type": "FLAT",
+      "scale_to_lvl": false
+    }
+  ]
+}
