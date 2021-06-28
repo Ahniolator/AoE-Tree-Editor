@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing;
 using System.IO;
+using System.Reflection;
 using System.Text.RegularExpressions;
 using System.Threading;
 using System.Windows.Forms;
@@ -34,6 +35,7 @@ namespace AoETreeEditor
         private void OnFormLoad(object sender, EventArgs e)
         {
             thisForm = this;
+            SetDoubleBuffer(viewport, true);
             viewport.Width = Width - 40;
             viewport.Height = Height - 90;
             Enabled = false;
@@ -104,6 +106,13 @@ namespace AoETreeEditor
             }
             Console.WriteLine($"progress...{loaded}/{files.Length}");
             Console.WriteLine($"Loaded {loaded} perks into database");
+        }
+
+        void SetDoubleBuffer(Control ctl, bool DoubleBuffered)
+        {
+            typeof(Control).InvokeMember("DoubleBuffered",
+                BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.SetProperty,
+                null, ctl, new object[] { DoubleBuffered });
         }
 
         private void InitSheet(bool isBlank)
