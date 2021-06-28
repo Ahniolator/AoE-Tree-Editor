@@ -4,6 +4,6 @@
 # Setup
  Put all usable perk files into /Perks folder and either restart the application or click 'reload perks' under the file dropdown
 
-#How to use:
+# How to use
  Double-click cell to clear or step through basic connector markers
  Right-click to access talents loaded from the /Perks folder
